@@ -213,11 +213,11 @@ class FacebookRequest
     /**
      * Set the HTTP method for this request.
      *
-     * @param string
+     * @param string $method
      */
     public function setMethod($method)
     {
-        $this->method = strtoupper($method);
+        $this->method = strtoupper($method ?: '');
     }
 
     /**

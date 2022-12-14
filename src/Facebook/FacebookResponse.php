@@ -68,11 +68,11 @@ class FacebookResponse
      * Creates a new Response entity.
      *
      * @param FacebookRequest $request
-     * @param string|null     $body
+     * @param string     $body
      * @param int|null        $httpStatusCode
      * @param array|null      $headers
      */
-    public function __construct(FacebookRequest $request, $body = null, $httpStatusCode = null, array $headers = [])
+    public function __construct(FacebookRequest $request, $body = '', $httpStatusCode = null, array $headers = [])
     {
         $this->request = $request;
         $this->body = $body;
